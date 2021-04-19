@@ -116,10 +116,10 @@ module.exports =
 	backupTurnServers : [
 		{
 			urls : [
-				'turn:turn.sharkbate.com.my:443?transport=tcp'
+				'turn:meet.sharkbate.com.my:443?transport=tcp'
 			],
-			username   : 'guest',
-			credential : 'somepassword'
+			username   : 'username2',
+			credential : 'password2'
 		}
 	],
 	// bittorrent tracker
