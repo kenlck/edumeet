@@ -6,7 +6,7 @@ var config =
 	productionPort  : 443,
 
 	/**
-	 * Supported browsers version 
+	 * Supported browsers version
 	 * in bowser satisfy format.
 	 * See more:
 	 * https://www.npmjs.com/package/bowser#filtering-browsers
@@ -28,20 +28,20 @@ var config =
 
 	/**
 	 * Resolutions:
-	 * 
+	 *
 	 * low ~ 320x240
 	 * medium ~ 640x480
 	 * high ~ 1280x720
 	 * veryhigh ~ 1920x1080
 	 * ultra ~ 3840x2560
-	 * 
+	 *
 	 **/
 
 	/**
 	 * Frame rates:
-	 * 
+	 *
 	 * 1, 5, 10, 15, 20, 25, 30
-	 * 
+	 *
 	 **/
 	// The aspect ratio of the videos as shown on
 	// the screen. This is changeable in client settings.
@@ -78,7 +78,7 @@ var config =
 	/**
 	 * Alternative simulcast setting:
 	 * [
-	 *   { maxBitRate: 50000 }, 
+	 *   { maxBitRate: 50000 },
 	 *	 { maxBitRate: 1000000 },
 	 *	 { maxBitRate: 4800000 }
 	 *],
@@ -105,12 +105,12 @@ var config =
 	defaultAudio:
 	{
 		autoGainControl      : false, // default : false
-		echoCancellation     : true, // default : true 
-		noiseSuppression     : true, // default : true 
+		echoCancellation     : true, // default : true
+		noiseSuppression     : true, // default : true
 		voiceActivatedUnmute : false, // default : false / Automatically unmute speaking above noisThereshold
 		noiseThreshold       : -60 // default -60 / This is only for voiceActivatedUnmute and audio-indicator
 	},
-	// Audio options for now only centrally from config file: 
+	// Audio options for now only centrally from config file:
 	centralAudioOptions:
 	{
 		sampleRate          : 96000, // default : 96khz / will not eat that much bandwith thanks to opus
@@ -118,20 +118,20 @@ var config =
 		volume              : 1.0,  // default : 1.0
 		sampleSize          : 16,  // default : 16
 		opusStereo          : false, // default : false / usually mics are mono so this saves bandwidth
-		opusDtx             : true,  // default : true / will save bandwidth 
+		opusDtx             : true,  // default : true / will save bandwidth
 		opusFec             : true, // default : true / forward error correction
 		opusPtime           : '20', // default : 20 / minimum packet time (3, 5, 10, 20, 40, 60, 120)
 		opusMaxPlaybackRate : 96000
 	},
 	/**
-	 * Set max number participants in one room that join 
+	 * Set max number participants in one room that join
 	 * unmuted. Next participant will join automatically muted
 	 * Default value is 4
-	 * 
-	 * Set it to 0 to auto mute all, 
+	 *
+	 * Set it to 0 to auto mute all,
 	 * Set it to negative (-1) to never automatically auto mute
 	 * but use it with caution
-	 * full mesh audio strongly decrease room capacity! 
+	 * full mesh audio strongly decrease room capacity!
 	 */
 	autoMuteThreshold    : 4,
 	background           : 'images/background.jpg',
@@ -146,27 +146,27 @@ var config =
 	notificationPosition : 'right',
 	// Timeout for autohiding topbar and button control bar
 	hideTimeout          : 3000,
-	// max number of participant that will be visible in 
+	// max number of participant that will be visible in
 	// as speaker
 	lastN                : 4,
 	mobileLastN          : 1,
-	// Highest number of lastN the user can select manually in 
+	// Highest number of lastN the user can select manually in
 	// userinteface
 	maxLastN             : 5,
 	// If truthy, users can NOT change number of speakers visible
 	lockLastN            : false,
 	// Show logo if "logo" is not null, else show title
-	// Set logo file name using logo.* pattern like "logo.png" to not track it by git 
-	logo                 : 'images/logo.example.png',
-	title                : 'edumeet',
+	// Set logo file name using logo.* pattern like "logo.png" to not track it by git
+	logo                 : 'images/logo.png',
+	title                : 'SharkMeet',
 	// Service & Support URL
 	// if not set then not displayed on the about modals
-	supportUrl           : 'https://support.example.com',
+	supportUrl           : 'https://help.sharkbate.com.my',
 	// Privacy and dataprotection URL or path
 	// by default privacy/privacy.html
 	// that is a placeholder for your policies
 	//
-	// but an external url could be also used here	 
+	// but an external url could be also used here
 	privacyUrl           : 'privacy/privacy.html',
 	theme                :
 	{
@@ -174,7 +174,7 @@ var config =
 		{
 			primary :
 			{
-				main : '#313131'
+				main : '#E52134'
 			}
 		},
 		overrides :
