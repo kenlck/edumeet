@@ -183,7 +183,7 @@ var config =
 			{
 				colorPrimary :
 				{
-					backgroundColor : '#E52134'
+					backgroundColor : '#ffffff'
 				}
 			},
 			MuiButton :
